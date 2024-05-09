@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color:rgb(139, 78, 199);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    font-optical-sizing: auto;
+    font-family: "League Spartan", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    height: 15%;
+}
+#quotes{
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Sedan SC", serif;
+    height: 50%;
+    width: 80%;
+    justify-self: center;
+    padding-top: 5%;
+}
+#author{
+    font-family: "Sedan SC", serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-left: 70%;
+}
+hr{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+#quote-btn{
+    width: 20%;
+    height: 50px;
+    align-self: flex-end;
+    margin-right: 2%;
+    background-color: rebeccapurple;
+    border-radius: 25px;
+    border:none;
+    outline:none;
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.3rem;
+    margin-top: 2%;
+}
+
+@media (max-width:600px){
+    .box{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        margin-top: 10%;
+        font-size: 2rem;
+        text-align: center;
+        padding: 6%;
+    }
+    #quotes{
+        font-size: 1.5rem;
+        height: 45%;
+        padding:5% 5% 0% 5%;
+        /* background-color: rebeccapurple; */
+        margin-top: 10%;
+    }
+    #author{
+        margin-left: 0%;
+        font-size: 1.2rem;
+        /* background-color: yellow; */
+        text-align: center;
+        width: 80%;
+    }
+    #quote-btn{
+        /* margin: 10% 0% 0% 21%; */
+        margin-left: 0%;
+        align-self: center;
+        width: 80%;
+        /* font-size: 1rem; */
+    }
+}
